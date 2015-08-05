@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+hello world!
+{% blocktrans with site_name=site.name site_domain=site.domain %}Thank you for using {{ site_name }}!
+{{ site_domain }}{% endblocktrans %}
+
+
+{% endblock content %}
